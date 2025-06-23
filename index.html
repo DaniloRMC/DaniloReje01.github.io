@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Estilo</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+        button {
+            padding: 50px;
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="cambiarColor()">Cambiar Color de Fondo</button>
+    <script>
+        function cambiarColor() {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'lightblue' ? 'orange' : 'lightblue';
+        }
+    </script>
+</body>
+</html>
